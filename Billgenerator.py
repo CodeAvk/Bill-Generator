@@ -6,7 +6,7 @@ root.title("@Avk Bill Generator")
 root.resizable(False,False)
 root.wm_iconbitmap("Bill.ico")
 
-
+# Here is the Reset Button
 def Reset():
     entry_Burgur.delete(0,END)
     entry_French_fries.delete(0,END)
@@ -16,6 +16,7 @@ def Reset():
     entry_Red_Bull.delete(0,END)
     entry_Coke.delete(0,END)
 
+ # Here is the Total Button 
 def Total():
  try:a1=int(Burgur.get())
  except:a1=0
@@ -60,7 +61,7 @@ def Total():
 Label(text="Bill Generator",bg="black",fg="orange",font="calibri 33  bold",width="300",height="2").pack()
 
 
-#Menu
+# Menu Bar
 f=Frame(root,bg="lightgreen",highlightbackground="black",highlightthickness=1,width=300,height=370)
 f.place(x=10,y=118)
 
@@ -75,7 +76,7 @@ Label(f,text="Red Bull.........Rs.160",font=("Lucida Calligraphy" ,15,  'bold'),
 Label(f,text="Coke.........Rs.90",font=("Lucida Calligraphy" ,15,  'bold'),bg="lightgreen",fg="black").place(x="20",y="260")
 
 
-# Bill
+# Bill Interface
 f2=Frame(root,bg="lightyellow",highlightbackground="black",highlightthickness=1,width=300,height=370)
 f2.place(x=690,y=118)
 
